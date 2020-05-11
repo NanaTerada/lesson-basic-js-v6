@@ -27,6 +27,19 @@ do{
         hp -= 15;
 } while (hp >0);
 
+// 特定の回だけスキップさせたい continue
+
+for (let i = 1;i <= 10; i++) {
+        // if (i === 4) {
+        // if (i % 3 === 0) { //3の倍数の時に
+        //         continue;　//一回スキップ
+        // }
+        if (i === 4){ //iが4になったら終了
+                break;
+        }
+        console.log(i);
+}
+
 
 
 
