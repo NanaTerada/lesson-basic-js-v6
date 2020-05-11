@@ -19,20 +19,21 @@ console.log('----------');
 
 // 関数を使うと短く書ける
 
-function showAd(){
+//引数を使ってみよう
+
+function showAd(message = 'AD'){　//仮引数 実引数が無かった時の値を設定できる
         console.log('----------');
-        console.log('-----AD---');
+        console.log(`-----${message}---`);
         console.log('----------');   
 }
 
-showAd();
+showAd('header Ad');　//実引数
 console.log('Tom is great!');
 console.log('BOb is great!');
 showAd();
 console.log('Steve is great!');
 console.log('Richard is great!');
-showAd();
-
+showAd('fooer Ad');
 
 
 
