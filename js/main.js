@@ -55,3 +55,23 @@
         // 1足したい場合は特殊な書き方がある
         price++;
         price--;
+
+        //データ型について
+
+        // 文字列(String)
+        // 数値(Number)
+        // undefined 定義されていない
+        // null　値がない
+        // 真偽値(boolean) true false
+        // オブジェクト(Object)　{a:3,b:5}
+
+        // typeofを使ってデータ型をコンソールで表示
+
+        console.log(typeof 'hello');
+        console.log(typeof 5);
+        console.log(typeof true);
+        console.log(typeof undefined);
+        console.log(typeof null);　//objectになるがjsの有名なバグである
+
+
+        
