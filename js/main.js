@@ -48,13 +48,13 @@
         // console.log(price * 140);
         // console.log(price * 160);
 
-        let price = 500;
-        price = price + 100;
-        // ↓短くかくには
-        price += 100;
-        // 1足したい場合は特殊な書き方がある
-        price++;
-        price--;
+        // let price = 500;
+        // price = price + 100;
+        // // ↓短くかくには
+        // price += 100;
+        // // 1足したい場合は特殊な書き方がある
+        // price++;
+        // price--;
 
         //データ型について
 
@@ -79,7 +79,21 @@
 
         // parseInt
         console.log(parseInt("hello",10)); //整数にできない場合はNaNと表示される　ノットアナンバー　数値型の値の一種である
-        
+
+        // 比較演算子を使ってみよう
+        const price = 1200;
+        console.log(price > 1000); //price は　1000より大きいのでコンソールに　trueと表示される
+        console.log(price < 1000);
+        console.log(price >= 1000);
+        console.log(price <= 1000);
+        console.log(price === 1000);
+        console.log(price !== 1000);
+
+        //false ->0 nul undefined '' false 
+        //true -> それ以外
+
+        console.log(Boolean(0));
+        console.log(Boolean('hello'));
 
 
         
