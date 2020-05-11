@@ -73,5 +73,13 @@
         console.log(typeof undefined);
         console.log(typeof null);　//objectになるがjsの有名なバグである
 
+        console.log('5' + 3); //計算されず53になってしまう +が文字列の連結のための演算地になってしまう
+        console.log(parseInt('5', 10) + 3); //8
+        // 文字列を整数値にする　(parseInt('5', 10)で10進数の整数値に変換してくれる
+
+        // parseInt
+        console.log(parseInt("hello",10)); //整数にできない場合はNaNと表示される　ノットアナンバー　数値型の値の一種である
+        
+
 
         
