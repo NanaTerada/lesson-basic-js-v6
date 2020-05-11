@@ -10,6 +10,15 @@ console.log(`hello ${i}`);
 
 }
 
+let hp = 100;
+
+// 100から0になる間
+while(hp >0){
+        console.log(`${hp} HP　left!`);
+        hp -= 15; //hpを15ずつ減らしていく
+        //終わるようにしないと永遠に繰り返されてPCがフリーズしてしまう
+}
+
 
 
 
