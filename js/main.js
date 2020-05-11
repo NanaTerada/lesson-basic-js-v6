@@ -1,25 +1,14 @@
 'use strict';
 
-// const sum = function(a,b,c){
-//         return a + b + c;
-// };
+// スコープ　＝　有効範囲
 
-// functionとる
-// =>をつける
-// return（返すだけ）だったら省略できる
+const x = 2;
 
-const sum = (a,b,c) => a + b + c;
+function f() {
+        // const x = 1;　これがないとconst x = 2;が有効になる
+        console.log(x);
+}
 
-
-const total = sum(1,2,3) + sum(4,5,6);
-console.log(total);
-
-// 引数が1つの場合は（）を省略できる
-
-// const double = function (a) {
-//         return a * 2;
-// }
-
-const double = a => a * 2;
-        
-console.log(double(12));
+f();
+// console.log(x);はここでは使えないので外で定義する必要がある
+console.log(x);
