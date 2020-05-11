@@ -1,25 +1,25 @@
 'use strict';
 
-function sum(a,b,c) { //カンマ区切りでいくつでも渡せる
-        //console.log(a + b + c);
-        return a + b + c;  returnを書くとそれ以降の処理は実行されないので注意
-}
+// const sum = function(a,b,c){
+//         return a + b + c;
+// };
 
-sum(1,2,3);
-sum(3,4,5);
+// functionとる
+// =>をつける
+// return（返すだけ）だったら省略できる
 
-const total = sum(1,2,3) + sum(3,4,5);
+const sum = (a,b,c) => a + b + c;
+
+
+const total = sum(1,2,3) + sum(4,5,6);
 console.log(total);
 
+// 引数が1つの場合は（）を省略できる
 
-// 関数式でかいてみする
+// const double = function (a) {
+//         return a * 2;
+// }
 
-const sum2 = function(e,f,g){
-        return e + f + g;
-}; //セミコロン注意
- 
-const total2 = sum2(1,2,3) + sum2(3,4,5);
-console.log(total2);
-
-
+const double = a => a * 2;
         
+console.log(double(12));
